@@ -13,7 +13,15 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/prompt', (req, res)=>{
-    console.log(req.query)
+    const titulo = req.query.titulo;
+    const autor = req.query.autor;
+    
+    const promptVariables = {
+        titulo: titulo,
+        autor: autor
+    }
+    console.log(promptVariables)
+    res.status(200).json(promptVariables)
 })
 
 app.listen(PORT, ()=>{

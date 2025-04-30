@@ -12,6 +12,8 @@ async function sendPrompt(){
             contentType: 'application/json'
         }
     }).then((response)=>{
-        console.log("teste")
+        return response.json();
+    }).then(data =>{
+        console.log(data)
     })
 }
