@@ -1,6 +1,6 @@
 
 
-function sendPrompt(){
+async function sendPrompt(){
     const titulo = document.getElementById("title").value;
     const autor = document.getElementById("author").value;
     console.log("Titulo: " + titulo);

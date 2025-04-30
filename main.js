@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/prompt', (req, res)=>{
-    
+    console.log(req.query)
 })
 
 app.listen(PORT, ()=>{
